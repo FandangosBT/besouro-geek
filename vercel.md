@@ -1,0 +1,6 @@
+- [ ] Criar rota serverless `/api/superfrete` na Vercel (ex.: `api/superfrete.js`) que leia `SUPERFRETE_TOKEN` do ambiente, faça POST para `https://api.superfrete.com/api/v0/calculator` e retorne o JSON sem expor o token.
+- [ ] Remover `/env.js` e a exposição de `window.SUPERFRETE_TOKEN` do front-end; garantir que o JS chame apenas `/api/superfrete` (mesma origem) para calcular frete.
+- [ ] Ajustar o front para não depender do `dev-server.js` em produção; manter apenas chamada a `/api/superfrete` e o proxy local só para dev.
+- [ ] Configurar `SUPERFRETE_TOKEN` nas variáveis de ambiente da Vercel (Project Settings > Environment Variables).
+- [ ] Validar fluxo em ambiente Vercel (Preview) com token real: cálculo de frete funcionando sem CORS e sem token exposto.
+- [ ] Opcional: adicionar `vercel.json` ou adaptar para Next.js se preferir estrutura de API Routes integrada.

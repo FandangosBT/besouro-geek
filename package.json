@@ -1,0 +1,12 @@
+{
+  "name": "batman-besourogeek",
+  "version": "1.0.0",
+  "description": "Landing page Batman Premium Edition",
+  "scripts": {
+    "dev": "node dev-server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "node-fetch": "^3.3.2"
+  }
+}
